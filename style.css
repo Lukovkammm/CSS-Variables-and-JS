@@ -1,0 +1,91 @@
+:root {
+    --base: #333333;
+    --size: 80%;
+    --blur: 0px;
+    --contrast: 100%;
+    --saturate: 100%;
+    --brightness: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--base);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0 0 40px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--base);
+    filter: invert(100%) contrast(140%);
+}
+
+.main {
+    display: flex;
+    max-width: 97%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.image {
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+img {
+    max-width: var(--size);
+    filter: blur(var(--blur)) contrast(var(--contrast)) saturate(var(--saturate)) brightness(var(--brightness));
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 18%;
+    height: 100%;
+}
+
+label {
+    line-height: 6rem;
+    color: var(--base);
+    filter: invert(100%) contrast(100%);
+}
+
+.reset {
+    margin: 20px 0;
+    height: 50px;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--base);
+    background-color: #000;
+    border-style: none;
+    border: solid 2px var(--base);
+    outline: none;
+    filter: invert(100%) contrast(100%);
+    box-shadow: 7px 7px 5px  var(--base);
+    cursor: pointer;
+
+}
